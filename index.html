@@ -314,4 +314,641 @@
                 
                 <!-- Product Card 1 -->
                 <div class="bg-white rounded-3xl overflow-hidden border border-purple-100/60 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
-                    <div class="relative aspect-[4/3] bg-
+                    <div class="relative aspect-[4/3] bg-purple-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1524351199679-46cddf530c04?auto=format&fit=crop&w=600&q=80" 
+                             alt="[Original Purple Blossom Cheesecake]" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/600x400/8b5cf6/ffffff?text=Original+Purple+Blossom'">
+                        <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Premium Best Seller</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-heading font-bold text-xl text-purple-950">Original Purple Blossom</h3>
+                            <span class="text-xs text-gold-700 bg-gold-100 font-semibold px-2 py-1 rounded-md">Low Sugar</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4 flex-grow">
+                            Signature dish kami. Tekstur cheesecake ubi super lembut dengan gradasi ungu alami yang estetik, berpadu rasa keju premium yang kaya.
+                        </p>
+                        <!-- Selector & Action -->
+                        <div class="border-t border-gray-100 pt-4 mt-auto">
+                            <div class="flex items-center justify-between gap-2 mb-4">
+                                <span class="text-xs text-gray-400 font-medium">Ukuran:</span>
+                                <div class="flex gap-1.5" id="size-1">
+                                    <button onclick="selectSize(1, 'Slice', 35000)" class="size-btn-1 px-3 py-1 text-xs border border-purple-200 bg-purple-100 text-purple-800 rounded-lg font-semibold transition-all">Slice</button>
+                                    <button onclick="selectSize(1, 'Whole (18cm)', 280000)" class="size-btn-1 px-3 py-1 text-xs border border-gray-200 hover:border-purple-300 text-gray-600 rounded-lg font-semibold transition-all">Whole</button>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-gray-400 block">Mulai Dari</span>
+                                    <span id="price-1" class="text-xl font-bold text-purple-900">Rp 35.000</span>
+                                </div>
+                                <button onclick="addToOrder('Original Purple Blossom', 1)" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-bold px-4 py-2.5 rounded-xl transition-colors">
+                                    Beli Varian Ini
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-purple-100/60 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                    <div class="relative aspect-[4/3] bg-purple-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" 
+                             alt="[Ubi Cheese Crust]" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/600x400/8b5cf6/ffffff?text=Ubi+Cheese+Crust'">
+                        <span class="absolute top-4 left-4 bg-gold-500 text-purple-950 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Crispy Base</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-heading font-bold text-xl text-purple-950">Ubi Cheese Crust</h3>
+                            <span class="text-xs text-purple-700 bg-purple-100 font-semibold px-2 py-1 rounded-md">Crunchy</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4 flex-grow">
+                            Kelembutan isi adonan ubi premium dengan kombinasi biskuit gandum renyah yang gurih di bagian bawah kue. Sangat disukai segala usia.
+                        </p>
+                        <!-- Selector & Action -->
+                        <div class="border-t border-gray-100 pt-4 mt-auto">
+                            <div class="flex items-center justify-between gap-2 mb-4">
+                                <span class="text-xs text-gray-400 font-medium">Ukuran:</span>
+                                <div class="flex gap-1.5" id="size-2">
+                                    <button onclick="selectSize(2, 'Slice', 38000)" class="size-btn-2 px-3 py-1 text-xs border border-purple-200 bg-purple-100 text-purple-800 rounded-lg font-semibold transition-all">Slice</button>
+                                    <button onclick="selectSize(2, 'Whole (18cm)', 300000)" class="size-btn-2 px-3 py-1 text-xs border border-gray-200 hover:border-purple-300 text-gray-600 rounded-lg font-semibold transition-all">Whole</button>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-gray-400 block">Mulai Dari</span>
+                                    <span id="price-2" class="text-xl font-bold text-purple-900">Rp 38.000</span>
+                                </div>
+                                <button onclick="addToOrder('Ubi Cheese Crust', 2)" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-bold px-4 py-2.5 rounded-xl transition-colors">
+                                    Beli Varian Ini
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-purple-100/60 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full group">
+                    <div class="relative aspect-[4/3] bg-purple-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1536680465769-2365207b035e?auto=format&fit=crop&w=600&q=80" 
+                             alt="[Matcha-Ubi Fusion]" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.src='https://placehold.co/600x400/8b5cf6/ffffff?text=Matcha-Ubi+Fusion'">
+                        <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Inovasi Rasa</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-heading font-bold text-xl text-purple-950">Matcha-Ubi Fusion</h3>
+                            <span class="text-xs text-emerald-700 bg-emerald-50 font-semibold px-2 py-1 rounded-md">Japanese Style</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4 flex-grow">
+                            Eksplorasi rasa timur yang memikat. Perpaduan pahit manis matcha Uji organik jepang dengan rasa legit ubi ungu asli Indonesia.
+                        </p>
+                        <!-- Selector & Action -->
+                        <div class="border-t border-gray-100 pt-4 mt-auto">
+                            <div class="flex items-center justify-between gap-2 mb-4">
+                                <span class="text-xs text-gray-400 font-medium">Ukuran:</span>
+                                <div class="flex gap-1.5" id="size-3">
+                                    <button onclick="selectSize(3, 'Slice', 40000)" class="size-btn-3 px-3 py-1 text-xs border border-purple-200 bg-purple-100 text-purple-800 rounded-lg font-semibold transition-all">Slice</button>
+                                    <button onclick="selectSize(3, 'Whole (18cm)', 320000)" class="size-btn-3 px-3 py-1 text-xs border border-gray-200 hover:border-purple-300 text-gray-600 rounded-lg font-semibold transition-all">Whole</button>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-gray-400 block">Mulai Dari</span>
+                                    <span id="price-3" class="text-xl font-bold text-purple-900">Rp 40.000</span>
+                                </div>
+                                <button onclick="addToOrder('Matcha-Ubi Fusion', 3)" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-bold px-4 py-2.5 rounded-xl transition-colors">
+                                    Beli Varian Ini
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Shopping Drawer Simulation -->
+    <div id="cart-drawer" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-300 max-w-sm w-full bg-white rounded-2xl shadow-2xl border border-purple-100 p-5">
+        <div class="flex items-center justify-between pb-3 border-b border-gray-100">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-bag-shopping text-purple-600"></i>
+                <h4 class="font-bold text-purple-950 text-sm">Pesanan Instan Anda</h4>
+            </div>
+            <button onclick="closeCart()" class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="py-4">
+            <p class="text-xs text-gray-400">Varian Terpilih:</p>
+            <p id="cart-item-name" class="font-bold text-purple-900 text-base mt-0.5">Original Purple Blossom</p>
+            <div class="flex justify-between items-center mt-2">
+                <span id="cart-item-size" class="text-xs text-gray-600 bg-purple-50 px-2 py-0.5 rounded-md">Ukuran: Slice</span>
+                <span id="cart-item-price" class="font-bold text-gray-800 text-sm">Rp 35.000</span>
+            </div>
+        </div>
+        <button onclick="redirectToWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md transition-all">
+            <i class="fa-brands fa-whatsapp text-lg"></i> Lanjutkan Pemesanan WA
+        </button>
+    </div>
+
+    <!-- Section 4: Galeri & Bukti Sosial (Social Proof & Influencer Review) -->
+    <section id="galeri" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-purple-600 font-bold uppercase tracking-wider text-xs">Testimoni & Suasana</span>
+                <h2 class="font-heading font-bold text-3xl sm:text-4xl text-purple-950 mt-2 mb-4">Ulasan Terbaik dari Pencinta Dessert</h2>
+                <p class="text-gray-500 text-sm sm:text-base">
+                    Apa kata mereka yang telah merasakan lembutnya Cheesecake Ubi? Temukan tagar resmi <span class="font-semibold text-purple-600">#CheesecakeUbiLokal</span> di media sosial Anda.
+                </p>
+            </div>
+
+            <!-- Grid Layout Instagram / Social Proof -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                
+                <!-- Review Card 1 -->
+                <div class="bg-purple-50/40 p-6 rounded-2xl border border-purple-50 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-purple-200 rounded-full overflow-hidden flex items-center justify-center font-bold text-purple-700 text-sm">
+                                AD
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-900">Amanda Daniswara</h4>
+                                <p class="text-xs text-gray-400">@manda_dessertlover</p>
+                            </div>
+                        </div>
+                        <div class="flex text-gold-500 gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic leading-relaxed">
+                            "Benar-benar guilt-free dessert idaman! Manisnya pas, ga bikin eneg sama sekali. Lembutnya ubi kerasa premium banget pas dipadukan sama kejunya."
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-gray-400 mt-4 block">Melalui Instagram Story</span>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="bg-purple-50/40 p-6 rounded-2xl border border-purple-50 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-purple-200 rounded-full overflow-hidden flex items-center justify-center font-bold text-purple-700 text-sm">
+                                KH
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-900">Kenji Hermawan</h4>
+                                <p class="text-xs text-gray-400">Food Vlogger (Jakarta)</p>
+                            </div>
+                        </div>
+                        <div class="flex text-gold-500 gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-5-half"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic leading-relaxed">
+                            "Sebagai pencinta cheesecake berat, saya sempat skeptis. Tapi pas coba varian Ubi Cheese Crust... Wow! Sensasi gurih base biskuit ketemu ubi ungu itu juara."
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-gray-400 mt-4 block">Melalui TikTok Review</span>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="bg-purple-50/40 p-6 rounded-2xl border border-purple-50 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 bg-purple-200 rounded-full overflow-hidden flex items-center justify-center font-bold text-purple-700 text-sm">
+                                RO
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-900">Raras Oktaviani</h4>
+                                <p class="text-xs text-gray-400">Wedding & Event Planner</p>
+                            </div>
+                        </div>
+                        <div class="flex text-gold-500 gap-1 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic leading-relaxed">
+                            "Kemarin pesan custom Whole Cake ukuran besar buat ulang tahun mertua. Semua tamu memuji warnanya yang ungu cantik alami, rasa mewahnya dapet banget."
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-gray-400 mt-4 block">Melalui Google Review</span>
+                </div>
+
+            </div>
+
+            <!-- Social Media Embedded Style Feed -->
+            <div class="border-t border-gray-100 pt-12">
+                <p class="text-center text-sm text-gray-400 mb-8 uppercase tracking-wider font-semibold">Ikuti Perjalanan Estetik Kami</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <div class="aspect-square bg-purple-100 rounded-2xl overflow-hidden relative group">
+                        <img src="https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=400&q=80" 
+                             alt="[Proses pembuatan kue]" 
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                             onerror="this.src='https://placehold.co/400x400/8b5cf6/ffffff?text=Gallery+1'">
+                        <div class="absolute inset-0 bg-purple-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="aspect-square bg-purple-100 rounded-2xl overflow-hidden relative group">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80" 
+                             alt="[Penyajian di Piring]" 
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                             onerror="this.src='https://placehold.co/400x400/8b5cf6/ffffff?text=Gallery+2'">
+                        <div class="absolute inset-0 bg-purple-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="aspect-square bg-purple-100 rounded-2xl overflow-hidden relative group">
+                        <img src="https://images.unsplash.com/photo-1511018556340-d16986a1c194?auto=format&fit=crop&w=400&q=80" 
+                             alt="[Dapur Panggang]" 
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                             onerror="this.src='https://placehold.co/400x400/8b5cf6/ffffff?text=Gallery+3'">
+                        <div class="absolute inset-0 bg-purple-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="aspect-square bg-purple-100 rounded-2xl overflow-hidden relative group">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80" 
+                             alt="[Petani Ubi Lokal]" 
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                             onerror="this.src='https://placehold.co/400x400/8b5cf6/ffffff?text=Gallery+4'">
+                        <div class="absolute inset-0 bg-purple-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-white text-3xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 5: Layanan Grosir & Pesanan Acara (B2B & Bulk Order) -->
+    <section id="kemitraan" class="py-20 bg-gradient-to-tr from-purple-950 to-purple-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- B2B Text / Offer -->
+                <div class="lg:col-span-7">
+                    <span class="text-gold-400 font-bold uppercase tracking-wider text-xs">HYBRID BUSINESS MODEL</span>
+                    <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white mt-2 mb-6">
+                        Kemitraan Grosir & Pesanan Skala Besar (B2B)
+                    </h2>
+                    <p class="text-purple-200 text-sm sm:text-base leading-relaxed mb-8">
+                        Kami menyuplai kebutuhan menu pencuci mulut premium siap saji untuk kafe, restoran, serta katering di area metropolitan. Serta melayani kustomisasi dessert mewah untuk hari istimewa Anda.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <!-- Card B2B 1 -->
+                        <div class="bg-white/5 border border-white/10 p-5 rounded-2xl hover:bg-white/10 transition-all">
+                            <div class="w-10 h-10 bg-gold-400/20 text-gold-400 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-store text-lg"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-lg text-white mb-2">Pasokan Grosir Kafe</h4>
+                            <p class="text-xs text-purple-200 leading-relaxed">
+                                Sistem pengantaran rutin harian/mingguan dengan standar kontrol kebersihan ketat dan margin keuntungan bisnis yang tinggi.
+                            </p>
+                        </div>
+                        <!-- Card B2B 2 -->
+                        <div class="bg-white/5 border border-white/10 p-5 rounded-2xl hover:bg-white/10 transition-all">
+                            <div class="w-10 h-10 bg-gold-400/20 text-gold-400 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-champagne-glasses text-lg"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-lg text-white mb-2">Pesanan Acara Khusus</h4>
+                            <p class="text-xs text-purple-200 leading-relaxed">
+                                Bebas menentukan dekorasi khusus, bentuk bertingkat, porsi piring, dan variasi dekorasi untuk pesta pernikahan maupun korporat.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- B2B CTA Button -->
+                    <div>
+                        <button onclick="downloadCatalog()" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-purple-950 font-bold px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-gold-500/20">
+                            <i class="fa-solid fa-file-pdf text-lg"></i> Unduh Katalog Kemitraan / Price List
+                        </button>
+                        <p id="download-success" class="text-xs text-gold-300 mt-2 hidden"><i class="fa-solid fa-check-double mr-1"></i> Katalog kemitraan berhasil disimulasikan terunduh!</p>
+                    </div>
+                </div>
+
+                <!-- B2B Feature Image / Callout -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/10 text-center">
+                        <i class="fa-solid fa-circle-nodes text-4xl text-gold-400 mb-4 animate-pulse"></i>
+                        <h3 class="font-heading font-bold text-2xl mb-2 text-white">Hubungi Tim Komersial</h3>
+                        <p class="text-xs text-purple-200 mb-6 leading-relaxed">
+                            Butuh sampel produk atau diskusi mengenai skema kontrak kerja sama bisnis jangka panjang?
+                        </p>
+                        <a href="#kontak" class="block w-full text-center bg-white hover:bg-gray-100 text-purple-950 font-bold py-3.5 rounded-xl transition-colors">
+                            <i class="fa-solid fa-comments mr-2"></i>Mulai Diskusi Kemitraan
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Formulir Kontak & Lead Generation -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info / Storytelling -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <span class="text-purple-600 font-bold uppercase tracking-wider text-xs block mb-1">Hubungi Hub Kami</span>
+                        <h2 class="font-heading font-bold text-3xl sm:text-4xl text-purple-950 mb-6">Siap Menjalin Kerja Sama Manis?</h2>
+                        <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+                            Apakah Anda konsumen yang ingin bertanya seputar pemesanan retail, atau pelaku usaha yang berminat menjadi mitra bisnis, tim kami siap melayani Anda sepenuh hati.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-gray-400 block">Dapur Produksi Pusat</span>
+                                    <span class="text-sm font-bold text-purple-900">Bandung, Jawa Barat, Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-gray-400 block">Kirim Surel</span>
+                                    <span class="text-sm font-bold text-purple-900">kemitraan@cheesecakeubi.id</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-gray-400 block">WhatsApp Hot Line</span>
+                                    <span class="text-sm font-bold text-purple-900">+62 812-3456-7890</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Founder Quote -->
+                    <div class="mt-8 lg:mt-0 p-5 bg-purple-50 rounded-2xl border-l-4 border-purple-600">
+                        <p class="text-xs text-purple-950 italic mb-3">
+                            "Inovasi kuliner sejati harus membawa dampak positif bagi bumi tempat berpijak dan masyarakat sekitar. Melalui kemitraan ini, kita menghadirkan kelezatan modern sekaligus mendukung keberlanjutan petani lokal."
+                        </p>
+                        <div>
+                            <span class="text-xs font-bold text-purple-900 block">Ghaelan Haerudin Al-anbari</span>
+                            <span class="text-[10px] text-gray-400">CEO & Founder Cheesecake Ubi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form -->
+                <div class="lg:col-span-7 bg-purple-50/30 p-8 sm:p-10 rounded-3xl border border-purple-100">
+                    <h3 class="font-heading font-bold text-2xl text-purple-950 mb-6">Formulir Prospek Kemitraan</h3>
+                    <form id="lead-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-xs text-gray-600 font-semibold mb-1">Nama Lengkap</label>
+                                <input type="text" id="name" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition-colors" placeholder="Contoh: Budi Santoso">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-xs text-gray-600 font-semibold mb-1">Alamat Email</label>
+                                <input type="email" id="email" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition-colors" placeholder="budi@example.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="phone" class="block text-xs text-gray-600 font-semibold mb-1">Nomor WhatsApp</label>
+                                <input type="tel" id="phone" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition-colors" placeholder="08123456789">
+                            </div>
+                            <div>
+                                <label for="category" class="block text-xs text-gray-600 font-semibold mb-1">Jenis Kebutuhan</label>
+                                <select id="category" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-purple-500 transition-colors">
+                                    <option value="Konsumen Retail">Konsumen Retail (Eceran)</option>
+                                    <option value="Pemilik Kafe">Pemilik Kafe / Toko Kue (B2B)</option>
+                                    <option value="Event Organizer">Penyelenggara Acara (Event Planner)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-xs text-gray-600 font-semibold mb-1">Pesan Tambahan</label>
+                            <textarea id="message" rows="4" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition-colors" placeholder="Tuliskan spesifikasi jumlah pesanan, jenis kafe Anda, atau tanggal acara khusus Anda..."></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-purple-200 transition-colors">
+                                Hubungi Tim Pemasaran Kami <i class="fa-solid fa-paper-plane ml-2"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Alert Box (Success) -->
+                    <div id="form-success-alert" class="hidden mt-4 bg-emerald-50 border border-emerald-200 p-4 rounded-xl flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-xl mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-emerald-900 text-sm">Pesan Berhasil Terkirim!</h4>
+                            <p class="text-xs text-emerald-700">Terima kasih telah menghubungi kami. Tim Pemasaran kami yang dipimpin oleh <span class="font-bold">Ghaelan Haerudin Al-anbari</span> akan segera menghubungi Anda dalam waktu maksimal 1x24 jam kerja.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Footer -->
+    <footer class="bg-purple-950 text-purple-100 pt-16 pb-8 border-t border-purple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1: Brand & Bio -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white">
+                            <i class="fa-solid fa-cake-candles text-lg"></i>
+                        </div>
+                        <span class="font-heading font-bold text-xl tracking-wider text-white">CHEESECAKE UBI</span>
+                    </div>
+                    <p class="text-xs text-purple-200 leading-relaxed">
+                        Inovasi dessert sehat rendah gula, berpadu sempurna dengan dukungan tulus untuk kesejahteraan petani ubi lokal Indonesia.
+                    </p>
+                    <div class="flex gap-4 pt-2">
+                        <a href="#" class="w-8 h-8 rounded-full bg-purple-900 hover:bg-purple-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-purple-900 hover:bg-purple-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-purple-900 hover:bg-purple-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigasi Cepat -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-base tracking-wider uppercase mb-4">Navigasi Cepat</h4>
+                    <ul class="space-y-2 text-xs text-purple-200">
+                        <li><a href="#hero" class="hover:text-gold-400 transition-colors">Beranda Utama</a></li>
+                        <li><a href="#keunggulan" class="hover:text-gold-400 transition-colors">Mengapa Cheesecake Ubi?</a></li>
+                        <li><a href="#katalog" class="hover:text-gold-400 transition-colors">Katalog Menu & Varian</a></li>
+                        <li><a href="#galeri" class="hover:text-gold-400 transition-colors">Ulasan Pelanggan</a></li>
+                        <li><a href="#kemitraan" class="hover:text-gold-400 transition-colors">Layanan B2B & Kemitraan</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Legal & Admin -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-base tracking-wider uppercase mb-4">Kebijakan & Syarat</h4>
+                    <ul class="space-y-2 text-xs text-purple-200">
+                        <li><a href="#" class="hover:text-gold-400 transition-colors">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-gold-400 transition-colors">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-gold-400 transition-colors">Pengiriman & Retur</a></li>
+                        <li><a href="#" class="hover:text-gold-400 transition-colors">Sertifikasi Halal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Lokasi Produksi & CEO -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-base tracking-wider uppercase mb-4">Kepemimpinan</h4>
+                    <p class="text-xs text-purple-200 leading-relaxed mb-4">
+                        Dikembangkan penuh dedikasi oleh <br>
+                        <span class="font-bold text-white text-sm">Ghaelan Haerudin Al-anbari</span><br>
+                        CEO & Founder Cheesecake Ubi.
+                    </p>
+                    <p class="text-[11px] text-purple-300">
+                        <i class="fa-solid fa-map-pin mr-1 text-gold-400"></i> Kantor Operasional: Bandung, Jawa Barat.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Copyright and Metadata Info -->
+            <div class="border-t border-purple-900 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-purple-300">
+                <p>&copy; 2026 Cheesecake Ubi. All Rights Reserved. Hak Cipta Dilindungi.</p>
+                <p class="mt-2 sm:mt-0 flex items-center gap-1">
+                    Made with <i class="fa-solid fa-heart text-red-500 animate-pulse"></i> for a healthier premium lifestyle.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Actions & Interactive Logic -->
+    <script>
+        // State for active chosen variants
+        const productStates = {
+            1: { name: 'Original Purple Blossom', size: 'Slice', price: 35000 },
+            2: { name: 'Ubi Cheese Crust', size: 'Slice', price: 38000 },
+            3: { name: 'Matcha-Ubi Fusion', size: 'Slice', price: 40000 }
+        };
+
+        // Size selection logic on cards
+        function selectSize(productId, sizeName, priceValue) {
+            // Update state
+            productStates[productId].size = sizeName;
+            productStates[productId].price = priceValue;
+
+            // Render Price update
+            const priceElement = document.getElementById(`price-${productId}`);
+            priceElement.innerText = `Rp ${priceValue.toLocaleString('id-ID')}`;
+
+            // Update UI Button active styles
+            const buttons = document.querySelectorAll(`.size-btn-${productId}`);
+            buttons.forEach(button => {
+                if (button.innerText.includes(sizeName)) {
+                    button.classList.add('bg-purple-100', 'text-purple-800', 'border-purple-200');
+                    button.classList.remove('border-gray-200', 'text-gray-600');
+                } else {
+                    button.classList.remove('bg-purple-100', 'text-purple-800', 'border-purple-200');
+                    button.classList.add('border-gray-200', 'text-gray-600');
+                }
+            });
+        }
+
+        // Add to interactive drawer/cart and open it
+        function addToOrder(variantName, productId) {
+            const state = productStates[productId];
+            
+            // Set values inside the drawer
+            document.getElementById('cart-item-name').innerText = state.name;
+            document.getElementById('cart-item-size').innerText = `Ukuran: ${state.size}`;
+            document.getElementById('cart-item-price').innerText = `Rp ${state.price.toLocaleString('id-ID')}`;
+
+            // Open the Drawer
+            const cartDrawer = document.getElementById('cart-drawer');
+            cartDrawer.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        }
+
+        // Close Drawer logic
+        function closeCart() {
+            const cartDrawer = document.getElementById('cart-drawer');
+            cartDrawer.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        }
+
+        // Redirect to WhatsApp with simulated message
+        function redirectToWhatsApp() {
+            const variantName = document.getElementById('cart-item-name').innerText;
+            const sizeValue = document.getElementById('cart-item-size').innerText;
+            const priceValue = document.getElementById('cart-item-price').innerText;
+
+            const text = `Halo Cheesecake Ubi! Saya ingin memesan:\n- Varian: *${variantName}*\n- ${sizeValue}\n- Total Harga: *${priceValue}*\n\nMohon informasi ongkos kirim dan ketersediaan slot hari ini. Terima kasih!`;
+            const encodedText = encodeURIComponent(text);
+            
+            // Window open simulation
+            window.open(`https://wa.me/6281234567890?text=${encodedText}`, '_blank');
+        }
+
+        // Handle B2B Form Submission with visual feedback
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            // Hide normal form and show success alert
+            document.getElementById('form-success-alert').classList.remove('hidden');
+            
+            // Clean inputs
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('message').value = '';
+        }
+
+        // Simulate Catalog Download
+        function downloadCatalog() {
+            document.getElementById('download-success').classList.remove('hidden');
+            setTimeout(() => {
+                document.getElementById('download-success').classList.add('hidden');
+            }, 5000);
+        }
+
+        // Toggle mobile drawer
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile nav drawer when any link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
